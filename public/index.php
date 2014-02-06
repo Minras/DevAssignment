@@ -29,32 +29,22 @@ require_once __DIR__ . '/../init_autoloader.php';
 $assignmentData = include __DIR__ . '/../data/assignmentData.php';
 $application    = new Application\Main($assignmentData);
 
-/* >>>> Ready? Code! <<<< */
-
 /**
  * The following method call will return all people with a last name of "Doe".
- *
- * @todo implementation
  */
-$application->yourMethodCall();
+var_dump($application->getPeople('lastName', 'Doe'));
 
 /**
  * The following method call will return all car models containing a "5"
- *
- * @todo implementation
  */
-$application->yourMethodCall();
+var_dump($application->getCars('5'));
 
 /**
  * The following method call will return all phone numbers ending with "15"
- *
- * @todo implementation
  */
-$application->yourMethodCall();
+var_dump($application->getPhones('*15'));
 
 /**
  * The following method call will return all numbers containing greater than, or equal to "4000"
- *
- * @todo implementation
  */
-$application->yourMethodCall();
+var_dump($application->getNumbers(4000, '>='));
