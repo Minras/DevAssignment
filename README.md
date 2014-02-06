@@ -1,3 +1,16 @@
+# Comments
+* The solution requires PHP 5.4 (to directly access array element of the method returning array)
+* The solution is not covered by tests (as it has to be build ASAP)
+* The solution uses thin model and fat controller (Application acts as a controller here)
+* The views are absent as the results are printed from the main application file (index.php)
+* Phone numbers task supports wildcards ('\*15', '555\*', '\*15\*', etc.)
+* Number comparison task uses Comparison helper which supports different types of operators ('>' and '>=' for now, but can be extended)
+
+Time spent: ~40 minutes for initial version which simply did the required filtering in the single Application file
+Full version with additional comparison/filtering functionality, data model, splitting the functionality between several files, etc. took two more hours.
+
+If the real projects have similar code quality and are covered with tests - it should be perfect place for developers.
+
 # Assignment explanation
 
 This assignment is intended to test your knowledge. It's simple enough, but allows us here at Ratus to see
